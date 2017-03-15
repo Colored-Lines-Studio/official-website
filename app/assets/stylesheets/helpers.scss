@@ -1,0 +1,17 @@
+// extends
+
+%section-header-styles {
+  > header {
+    border-bottom: 1px solid $main-darker;
+    padding: 35px;
+    text-align: center;
+
+    h2 {
+      font-size: 40px;
+      font-family: $mont;
+      text-transform: uppercase;
+      font-weight: 200;
+      letter-spacing: 2px;
+    }
+  }
+}

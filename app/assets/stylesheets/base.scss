@@ -1,0 +1,9 @@
+body {
+  background-image: linear-gradient(to bottom, $main 0%, $main-darker 100%);
+  color: $white;
+  font-family: $fira;
+}
+
+[class*="icon"] {
+  color: $secondary;
+}

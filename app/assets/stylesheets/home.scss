@@ -1,0 +1,119 @@
+.header {
+  height: 100vh;
+
+  .header--navigation {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid $main-darker;
+    font-weight: 200;
+
+    .header--logo {
+      margin-left: 25px;
+    }
+
+    .header--navlinks {
+      margin-right: 25px;
+
+      > * {
+        margin: 0 12px;
+      }
+
+      .hire-us-btn {
+        background-color: $secondary;
+        border: 0;
+        border-radius: 0;
+        color: lighten($main-darker, 10%);
+        text-transform: uppercase;
+        width: 200px;
+        font-size: smaller;
+        font-weight: 600;
+        font-family: $mont;
+        letter-spacing: 1.5px;
+        padding: 12px;
+      }
+    }
+  }
+
+  .header--jumbotron {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      font-family: $mont;
+      font-weight: 800;
+      font-size: 65px;
+      margin-left: -25%;
+      margin-top: -50px;
+
+      .header--highlight {
+        display: block;
+        font-size: 85px;
+        margin-top: 12px;
+        margin-bottom: 25%;
+      }
+    }
+
+    .fa-angle-down {
+      font-size: 30px;
+      color: $secondary;
+      font-weight: 200;
+      cursor: pointer;
+    }
+  }
+}
+
+.why-us {
+  border-top: 1px solid $main-darker;
+  height: 80vh;
+
+  @extend %section-header-styles;
+
+  .row {
+    margin: 0 25px;
+    text-align: center;
+    height: 100%;
+
+    [class^="col-"] {
+      border: 1px solid $main-darker;
+      border-top: 0;
+      height: 100%;
+      padding-top: 70px;
+
+      &:first-of-type {
+        border-right: 0;
+      }
+
+      &:first-of-type, &:last-of-type {
+        border-left: 0;
+      }
+
+      header {
+        font-family: $mont;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-bottom: 25px;
+
+        h3 {
+          font-size: 30px;
+        }
+
+        .fa {
+          font-size: 153px;
+        }
+      }
+
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.what-we-can-do {
+  @extend %section-header-styles
+}
