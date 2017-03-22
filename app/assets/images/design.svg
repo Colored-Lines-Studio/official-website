@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-4768 6638 142.373 152.373">
+  <defs>
+    <style>
+      .cls-1, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #fff100;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #372060;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_367" data-name="Group 367" transform="translate(-5109 4224)">
+    <line id="Line_12" data-name="Line 12" class="cls-1" y1="93" x2="71" transform="translate(350.5 2423.5)"/>
+    <path id="Path_654" data-name="Path 654" class="cls-1" d="M392.373,2538.626s-46.816-39.44-12.231-85.037,88.694-15.773,88.694-15.773" transform="translate(6 16)"/>
+    <g id="Rectangle_199" data-name="Rectangle 199" class="cls-2" transform="matrix(0.588, -0.809, 0.809, 0.588, 387.627, 2556.381)">
+      <rect class="cls-3" width="17" height="17"/>
+      <rect class="cls-4" x="1" y="1" width="15" height="15"/>
+    </g>
+    <g id="Rectangle_200" data-name="Rectangle 200" class="cls-2" transform="matrix(0.588, -0.809, 0.809, 0.588, 459.627, 2457.381)">
+      <rect class="cls-3" width="17" height="17"/>
+      <rect class="cls-4" x="1" y="1" width="15" height="15"/>
+    </g>
+    <g id="Rectangle_201" data-name="Rectangle 201" class="cls-2" transform="matrix(0.588, -0.809, 0.809, 0.588, 374.627, 2471.381)">
+      <rect class="cls-3" width="17" height="17"/>
+      <rect class="cls-4" x="1" y="1" width="15" height="15"/>
+    </g>
+    <g id="Ellipse_70" data-name="Ellipse 70" class="cls-2" transform="translate(411 2414)">
+      <circle class="cls-3" cx="9" cy="9" r="9"/>
+      <circle class="cls-4" cx="9" cy="9" r="8"/>
+    </g>
+    <g id="Ellipse_71" data-name="Ellipse 71" class="cls-2" transform="translate(341 2507)">
+      <circle class="cls-3" cx="9" cy="9" r="9"/>
+      <circle class="cls-4" cx="9" cy="9" r="8"/>
+    </g>
+  </g>
+</svg>

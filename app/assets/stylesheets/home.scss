@@ -11,6 +11,10 @@
 
     .header--logo {
       margin-left: 25px;
+
+      .logo img {
+        width: 90px;
+      }
     }
 
     .header--navlinks {
@@ -21,17 +25,7 @@
       }
 
       .hire-us-btn {
-        background-color: $secondary;
-        border: 0;
-        border-radius: 0;
-        color: lighten($main-darker, 10%);
-        text-transform: uppercase;
-        width: 200px;
-        font-size: smaller;
-        font-weight: 600;
-        font-family: $mont;
-        letter-spacing: 1.5px;
-        padding: 12px;
+        @extend %cta-btn;
       }
     }
   }
@@ -69,26 +63,21 @@
 
 .why-us {
   border-top: 1px solid $main-darker;
-  height: 80vh;
 
   @extend %section-header-styles;
 
   .row {
     margin: 0 25px;
     text-align: center;
-    height: 100%;
 
     [class^="col-"] {
       border: 1px solid $main-darker;
       border-top: 0;
-      height: 100%;
       padding-top: 70px;
-
-      &:first-of-type {
-        border-right: 0;
-      }
+      padding-bottom: 70px;
 
       &:first-of-type, &:last-of-type {
+        border-right: 0;
         border-left: 0;
       }
 
@@ -102,8 +91,10 @@
           font-size: 30px;
         }
 
-        .fa {
-          font-size: 153px;
+        .icon {
+          width: 150px;
+          height: 150px;
+          max-width: 100%;
         }
       }
 
@@ -115,5 +106,59 @@
 }
 
 .what-we-can-do {
-  @extend %section-header-styles
+  @extend %section-header-styles;
+  background: transparentize($black, 0.8);
+  text-align: center;
+
+  .row {
+    margin: 0 25px;
+
+    [class^="col-"] {
+      padding-top: 70px;
+      padding-bottom: 25px;
+      border: 1px solid $main-darker;
+      border-top: 0;
+      border-bottom: 0;
+
+      &:nth-child(1), &:last-child {
+        border-left: 0;
+        border-right: 0;
+      }
+
+      &:nth-child(2) {
+        border-right: 0;
+      }
+    }
+  }
+
+  .icon {
+    width: 120px;
+    height: 120px;
+    max-width: 100%;
+  }
+}
+
+.say-hello {
+  padding: 45px;
+
+  .say-hello-btn {
+    @extend %cta-btn;
+  }
+}
+
+.footer {
+  background: transparentize($black, 0.8);
+  padding: 70px;
+  display: flex;
+  justify-content: space-between;
+
+  .footer--social-icons {
+    .icon {
+      color: $light-blue;
+      margin-left: 10px;
+      margin-right: 10px;
+      font-size: 18px;
+      text-decoration: none;
+    }
+  }
 }

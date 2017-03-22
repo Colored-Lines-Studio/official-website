@@ -20,13 +20,15 @@
       <span class="header--highlight">Creative Agency</span>
     </h1>
 
-    <%= fa_icon 'angle-down icon' %>
+    <%= link_to '#the-why', data: { 'smooth-scroll' => true } do %>
+      <%= fa_icon 'angle-down icon' %>
+    <% end  %>
   </div>
 </header>
 
-<section class="why-us">
+<section class="why-us" id="the-why">
   <header>
-    <h2>
+    <h2 class="wow fadeIn" data-wow-duration="5s">
       Why are we different?
     </h2>
   </header>
@@ -34,12 +36,12 @@
   <div class="row">
     <div class="col-sm-4">
       <header>
-        <%= fa_icon 'cube 5x icon' %>
-        <h3>
+        <%= image_tag 'problem_solving.svg', class: 'icon icon-cube wow pulse', data: { 'wow-delay' => '.2s', 'wow-duration' => '5s' } %>
+        <h3 class="wow fadeIn" data-wow-delay=".4s" data-wow-duration="5s">
           Problem Solving
         </h3>
       </header>
-      <p>
+      <p class="wow fadeIn" data-wow-delay=".6s" data-wow-duration="5s">
         We emphatetically make your problem ours and we pride ourselves in finding solutions to these problems
         using the latest technologies.
       </p>
@@ -47,25 +49,25 @@
 
     <div class="col-sm-4">
       <header>
-        <%= fa_icon 'heartbeat 5x icon' %>
-        <h3>
+        <%= image_tag 'empathetic.svg', class: 'icon icon-heart wow pulse', data: { 'wow-delay' => '.2s', 'wow-duration' => '5s' } %>
+        <h3 class="wow fadeIn" data-wow-delay=".4s" data-wow-duration="5s">
           Emphatetic
         </h3>
       </header>
-      <p>
+      <p class="wow fadeIn" data-wow-delay=".6s" data-wow-duration="5s">
         We put ourselves in your shoes, considering all your business needs while ensuring your users get the very best
-        exprience using your products.
+        experience using your products.
       </p>
     </div>
 
     <div class="col-sm-4">
       <header>
-        <%= fa_icon 'bullseye 5x icon' %>
-        <h3>
+        <%= image_tag 'consistency.svg', class: 'icon icon-bullseye wow pulse', data: { 'wow-delay' => '.2s', 'wow-duration' => '5s' } %>
+        <h3 class="wow fadeIn" data-wow-delay=".4s" data-wow-duration="5s">
           Consistency
         </h3>
       </header>
-      <p>
+      <p class="wow fadeIn" data-wow-delay=".6s" data-wow-duration="5s">
         We've made a long lasting impression by being consistent with our delivery. We are always on time, in sync and
         we aren't scared to re-iterate.
       </p>
@@ -76,7 +78,7 @@
 
 <section class="what-we-can-do">
   <header>
-    <h2>
+    <h2 class="wow slideInUp" data-wow-duration="1s">
       What we can do for you
     </h2>
   </header>
@@ -84,7 +86,7 @@
   <div class="row">
     <div class="col-sm-3">
       <header>
-        <%= fa_icon 'bullseye 5x icon' %>
+        <%= image_tag 'design.svg', class: 'icon wow bounce', data: { 'wow-delay' => '.2s' } %>
         <h3>
           Design
         </h3>
@@ -96,7 +98,7 @@
 
     <div class="col-sm-3">
       <header>
-        <%= fa_icon 'bullseye 5x icon' %>
+        <%= image_tag 'research.svg', class: 'icon wow bounce', data: { 'wow-delay' => '.4s' } %>
         <h3>
           Research
         </h3>
@@ -108,7 +110,7 @@
 
     <div class="col-sm-3">
       <header>
-        <%= fa_icon 'bullseye 5x icon' %>
+        <%= image_tag 'develop.svg', class: 'icon wow bounce', data: { 'wow-delay' => '.6s' } %>
         <h3>
           Develop
         </h3>
@@ -120,7 +122,7 @@
 
     <div class="col-sm-3">
       <header>
-        <%= fa_icon 'bullseye 5x icon' %>
+        <%= image_tag 'deploy.svg', class: 'icon wow bounce', data: { 'wow-delay' => '.8s' } %>
         <h3>
           Deploy
         </h3>
@@ -133,18 +135,13 @@
   </div>
 </section>
 
-<section class="signatures">
+<section class="say-hello">
   <div class="row">
-    <div class="col-sm-6">
-      <p>
-        Cto signature
-      </p>
+    <div class="col-sm-12 text-center">
+      <button class="btn btn-primary say-hello-btn">
+        Say Hello
+      </button>
     </div>
 
-    <div class="col-sm-6">
-      <p>
-        Director signature
-      </p>
-    </div>
   </div>
 </section>

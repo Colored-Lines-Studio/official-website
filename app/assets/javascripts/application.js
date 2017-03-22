@@ -13,4 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require smooth-scroll.min
+//= require wow.min
 //= require_tree .

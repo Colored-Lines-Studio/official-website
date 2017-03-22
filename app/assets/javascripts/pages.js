@@ -1,2 +1,15 @@
-// Place all the behaviors and hooks related to the matching controller here.
-// All this logic will automatically be available in application.js.
+(function () {
+  $(function () {
+    var smoothScrollTrigger = document.querySelector('[data-smooth-scroll]'),
+        smoothScrollAnchor = document.querySelector('#the-why');
+
+    smoothScrollTrigger.addEventListener('click', function (e) {
+      e.preventDefault();
+      smoothScroll.animateScroll(smoothScrollAnchor, this, {
+        speed: 1500
+      });
+    });
+
+    new WOW().init();
+  });
+}());
