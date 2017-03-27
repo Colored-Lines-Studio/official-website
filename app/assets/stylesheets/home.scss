@@ -31,6 +31,16 @@
   }
 
   .header--jumbotron {
+    background-image:
+      image-url('repeat.svg'),
+      image-url('pencil.svg'),
+      image-url('code.svg'),
+      image-url('time.svg'),
+      image-url('desktop.svg'),
+      image-url('message.svg');
+    background-size: 40px, 70px, 40px, 30px, 40px, 60px;
+    background-position: 65% 15%, 76% 25%, 75% 55%, 65% 60%, 45% 61%, 25% 61%;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -151,6 +161,13 @@
   padding: 70px;
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
+
+  .footer--logo {
+    img {
+      width: 200px;
+    }
+  }
 
   .footer--social-icons {
     .icon {
