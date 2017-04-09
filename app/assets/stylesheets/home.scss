@@ -9,16 +9,33 @@
     border-bottom: 1px solid $main-darker;
     font-weight: 200;
 
+    @media screen and (max-width: 537px) {
+      align-items: flex-end;
+    }
+
     .header--logo {
       margin-left: 25px;
 
+      @media screen and (max-width: 537px) {
+        margin-left: 0;
+      }
+
       .logo img {
         width: 90px;
+
+        @media screen and (max-width: 537px) {
+          width: 60px;
+        }
       }
     }
 
     .header--navlinks {
       margin-right: 25px;
+
+      @media screen and (max-width: 537px) {
+        text-align: right;
+        margin-right: 0;
+      }
 
       > * {
         margin: 0 12px;
@@ -47,6 +64,14 @@
     align-items: center;
     justify-content: center;
 
+    @media screen and (max-width: 764px) {
+      text-align: center;
+    }
+
+    @media screen and (max-height: 320px) {
+      height: auto;
+    }
+
     h1 {
       font-family: $mont;
       font-weight: 800;
@@ -54,11 +79,28 @@
       margin-left: -25%;
       margin-top: -50px;
 
+      @media screen and (max-width: 960px) {
+        font-size: 40px;
+        margin-left: 0;
+      }
+
+      @media screen and (max-height: 320px) {
+        margin-top: 5px;
+      }
+
       .header--highlight {
         display: block;
         font-size: 85px;
         margin-top: 12px;
         margin-bottom: 25%;
+
+        @media screen and (max-width: 764px) {
+          font-size: 60px;
+        }
+
+        @media screen and (max-height: 320px) {
+          margin-bottom: 3%;
+        }
       }
     }
 
@@ -85,6 +127,11 @@
       border-top: 0;
       padding-top: 70px;
       padding-bottom: 70px;
+
+      @media screen and (max-width: 540px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
 
       &:first-of-type, &:last-of-type {
         border-right: 0;
@@ -130,6 +177,11 @@
       border-top: 0;
       border-bottom: 0;
 
+      @media screen and (max-width: 540px) {
+        padding-top: 40px;
+        padding-bottom: 5px;
+      }
+
       &:nth-child(1), &:last-child {
         border-left: 0;
         border-right: 0;
@@ -163,6 +215,11 @@
   justify-content: space-between;
   align-items: flex-end;
 
+  @media screen and (max-width: 540px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .footer--logo {
     img {
       width: 200px;
@@ -170,6 +227,12 @@
   }
 
   .footer--social-icons {
+
+    @media screen and (max-width: 540px) {
+      flex-direction: column;
+      margin-top: 15px;
+    }
+
     .icon {
       color: $light-blue;
       margin-left: 10px;
