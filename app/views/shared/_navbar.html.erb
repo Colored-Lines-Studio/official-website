@@ -10,5 +10,6 @@
       Like what you see?
     </span>
     <%= link_to 'Hire Us', hire_us_path, class: 'btn btn-warning hire-us-btn' %>
+    <%= home_button if current_page?('/hire_us') %>
   </div>
 </nav>

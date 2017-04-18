@@ -5,88 +5,93 @@
     <div class="row">
       <div class="col-sm-6 col-sm-offset-3">
         <%= form_for :mail_us, url: mail_us_path, html: { class: 'form' } do |f| %>
-          <%= field_set_tag 'Hire us', class: 'form-title' do %>
-
-            <div class="row">
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <%= f.label :name, 'Name:' %>
-                  <%= f.text_field :name, class: 'form-control', required: true %>
-                </div>
+          <%= field_set_tag 'Hire us', class: 'form-title' %>
+          <div class="row form-content">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <%= f.label :name, 'Name:' %>
+                <%= f.text_field :name, class: 'form-control', required: true %>
               </div>
+            </div>
 
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <%= f.label :email, 'Email:' %>
-                  <%= f.email_field :name, class: 'form-control', required: true %>
-                </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <%= f.label :email, 'Email:' %>
+                <%= f.email_field :name, class: 'form-control', required: true %>
               </div>
+            </div>
 
-              <div class="col-sm-6">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <%= f.label :type_of_work, 'Type of Work:' %>
                 <div class="form-group">
-                  <%= f.label :type_of_work, 'Type of Work:' %>
-                  <div class="form-group">
-                    <%= f.check_box :type_of_work, {}, :branding %> Branding
-                  </div>
-
-                  <div class="form-group">
-                    <%= f.check_box :type_of_work, {}, :web_interface_design %> web / interface design
-                  </div>
-
-                  <div class="form-group">
-                    <%= f.check_box :type_of_work, {}, :research_ux_design %> research / ux design
-                  </div>
-
-                  <div class="form-group">
-                    <%= f.check_box :type_of_work, {}, :front_end_back_end_development %> front-end/back-end development
-                  </div>
+                  <div class="input-field"></div>
+                  <%= f.check_box :type_of_work, {}, :branding %> Branding
                 </div>
-              </div>
 
-              <div class="col-sm-6">
                 <div class="form-group">
-                  <%= f.label :budget, 'Budget:' %>
-                  <div class="form-group">
-                    <%= f.radio_button :budget, '$2,000 - $5,000' %> $2,000 - $5,000
-                  </div>
-
-                  <div class="form-group">
-                    <%= f.radio_button :budget, '$5,000 - $10,000' %> $5,000 - $10,000
-                  </div>
-
-                  <div class="form-group">
-                    <%= f.radio_button :budget, '$10,000 - $30,000' %> $10,000 - $30,000
-                  </div>
-
-                  <div class="form-group">
-                    <%= f.radio_button :budget, 'not sure, I\'d like an estimate' %> not sure, I'd like an estimate
-                  </div>
+                  <div class="input-field"></div>
+                  <%= f.check_box :type_of_work, {}, :web_interface_design %> web / interface design
                 </div>
-              </div>
 
-              <div class="col-sm-12">
                 <div class="form-group">
-                  <%= f.label :short_intro do %>
-                    <span>Short Intro:</span>
-                    <span class="muted">A sentence or two about your project</span>
-                  <% end %>
-                  <%= f.text_area :short_intro, class: 'form-control' %>
+                  <div class="input-field"></div>
+                  <%= f.check_box :type_of_work, {}, :research_ux_design %> research / ux design
                 </div>
-              </div>
 
-              <div class="col-sm-12">
-                <div class="form-group text-center">
-                  <%= f.button 'Send Request', class: 'btn btn-warning' %>
-                  <div class="direct-email">
-                    <p>
-                      If you prefer, you can <%= link_to 'email us', 'mailto:email@cls.studio?subject=Enquiry' %> directly
-                    </p>
-                  </div>
+                <div class="form-group">
+                  <div class="input-field"></div>
+                  <%= f.check_box :type_of_work, {}, :front_end_back_end_development %> front-end/back-end development
                 </div>
               </div>
             </div>
 
-          <% end %>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <%= f.label :budget, 'Budget:' %>
+                <div class="form-group">
+                  <div class="input-field rounded"></div>
+                  <%= f.radio_button :budget, '$2,000 - $5,000' %> $2,000 - $5,000
+                </div>
+
+                <div class="form-group">
+                  <div class="input-field rounded"></div>
+                  <%= f.radio_button :budget, '$5,000 - $10,000' %> $5,000 - $10,000
+                </div>
+
+                <div class="form-group">
+                  <div class="input-field rounded"></div>
+                  <%= f.radio_button :budget, '$10,000 - $30,000' %> $10,000 - $30,000
+                </div>
+
+                <div class="form-group">
+                  <div class="input-field rounded"></div>
+                  <%= f.radio_button :budget, 'not sure, I\'d like an estimate' %> not sure, I'd like an estimate
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-12">
+              <div class="form-group">
+                <%= f.label :short_intro do %>
+                  <span>Short Intro:</span>
+                  <span class="muted">A sentence or two about your project</span>
+                <% end %>
+                <%= f.text_area :short_intro, class: 'form-control' %>
+              </div>
+            </div>
+
+            <div class="col-sm-12">
+              <div class="form-group text-center">
+                <%= f.button 'Send Request', class: 'btn btn-warning' %>
+                <div class="direct-email">
+                  <p>
+                    If you prefer, you can <%= link_to 'email us', 'mailto:email@cls.studio?subject=Enquiry' %> directly
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         <% end %>
       </div>
     </div>

@@ -1,5 +1,19 @@
 #hire-us-page {
-  // height: auto;
+  .header--navlinks {
+    span, .hire-us-btn {
+      display: none;
+    }
+
+    .home-btn {
+      @extend %cta-btn;
+      background: transparent;
+      border: 1px solid $secondary;
+      color: $secondary;
+      display: inline-block;
+      text-align: center;
+      text-decoration: none;
+    }
+  }
 }
 
 .hire-us-form {
@@ -42,21 +56,75 @@
       padding: 10px;
     }
 
+    .form-content {
+      margin-top: -25px;
+    }
+
     label {
       font-size: 16px;
       padding-bottom: 5px;
+      font-weight: 300;
+
+      &[for="mail_us_short_intro"] {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        .muted {
+          color: transparentize($white, .7);
+          font-size: 10px;
+          text-transform: lowercase;
+        }
+      }
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    .form-group > .form-group {
+      display: flex;
+      align-items: center;
+      font-weight: 100;
+      text-transform: lowercase;
+
+      .input-field {
+        background: lighten($main, 2%);
+        border: 1px solid rgba(84, 75, 28, 1);
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+
+        &.rounded {
+          border-radius: 100%;
+        }
+
+        & ~ input {
+          visibility: hidden;
+        }
+      }
     }
 
     .form-control {
       background: lighten($main, 2%);
       border-radius: 0;
-      border-color:rgba(84, 75, 28, 1);
+      border-color: rgba(84, 75, 28, 1);
       border-width: 1px;
       color: $white;
     }
 
     button[type="submit"] {
       @extend %cta-btn;
+    }
+
+    .direct-email {
+      font-size: 11px;
+      font-weight: 300;
+      margin-top: 12px;
+
+      a {
+        color: $secondary;
+      }
     }
 
   }
