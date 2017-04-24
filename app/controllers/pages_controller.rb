@@ -6,12 +6,13 @@ class PagesController < ApplicationController
   end
 
   def mail_us
+    binding.pry
     # TODO: receive form params and mail to email address
   end
 
   private
 
   def mail_us_params
-    #code
+    params.require(:mail_us).permit(:name, :email, :budget, :short_intro, :type_of_work => [])
   end
 end

@@ -94,13 +94,35 @@
         width: 20px;
         height: 20px;
         cursor: pointer;
+        position: relative;
 
         &.rounded {
           border-radius: 100%;
+
+          &.checked::after {
+            border-radius: 100%;
+            left: 21%;
+          }
         }
 
         & ~ input {
-          visibility: hidden;
+          opacity: 0;
+          pointer-events: none;
+        }
+
+        &.checked {
+          border-width: 2px;
+
+          &::after {
+            content: '';
+            position: absolute;
+            border: 2px solid $secondary;
+            top: 20%;
+            left: 24%;
+            width: 10px;
+            height: 10px;
+            background: $secondary;
+          }
         }
       }
     }
@@ -111,6 +133,10 @@
       border-color: rgba(84, 75, 28, 1);
       border-width: 1px;
       color: $white;
+
+      &:focus {
+        box-shadow: none;
+      }
     }
 
     button[type="submit"] {
