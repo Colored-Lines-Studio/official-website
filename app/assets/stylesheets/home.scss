@@ -21,7 +21,7 @@
       }
 
       .logo img {
-        width: 90px;
+        width: 50px;
 
         @media screen and (max-width: 537px) {
           width: 60px;
@@ -117,6 +117,9 @@
   border-top: 1px solid $main-darker;
 
   @extend %section-header-styles;
+  .wow{
+    font-size: 30px;
+  }
 
   .row {
     margin: 0 25px;
