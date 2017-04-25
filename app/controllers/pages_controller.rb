@@ -12,7 +12,7 @@ class PagesController < ApplicationController
       budget: "#{mail_us_params[:budget]}",
       short_intro: "#{mail_us_params[:type_of_work]}"
     }
-    ContactUsMailer.thank_you(@inquiry).deliver_later
+    ContactUsMailer.thank_you(@inquiry).deliver_now
 
     redirect_to root_path
   end
