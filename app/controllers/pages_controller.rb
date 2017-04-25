@@ -6,8 +6,15 @@ class PagesController < ApplicationController
   end
 
   def mail_us
-    binding.pry
-    # TODO: receive form params and mail to email address
+    @inquiry = {
+      name: "#{mail_us_params[:name]}",
+      email: "#{mail_us_params[:email]}",
+      budget: "#{mail_us_params[:budget]}",
+      short_intro: "#{mail_us_params[:type_of_work]}"
+    }
+    ContactUsMailer.thank_you(@inquiry).deliver_later
+
+    redirect_to root_path
   end
 
   private
