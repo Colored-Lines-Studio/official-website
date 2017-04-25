@@ -42,6 +42,9 @@ Rails.application.configure do
   # number of complex assets.
   config.assets.debug = true
 
+  # Add fonts to precompile config
+  config.assets.precompile << /\.(?:svg|eot|woff|ttf)\z/
+
   # Suppress logger output for asset requests.
   config.assets.quiet = true
 

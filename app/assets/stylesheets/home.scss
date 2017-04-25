@@ -2,6 +2,7 @@
   height: 100vh;
 
   .header--navigation {
+    font-family: 'ProximaNova';
     display: flex;
     align-items: baseline;
     justify-content: space-between;
@@ -27,6 +28,7 @@
           width: 60px;
         }
       }
+      background-image: image-url('logo.png');
     }
 
     .header--navlinks {
@@ -241,4 +243,7 @@
       text-decoration: none;
     }
   }
+}
+
+  @extend %section-header-styles
 }
