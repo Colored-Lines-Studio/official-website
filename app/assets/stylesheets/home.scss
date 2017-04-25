@@ -130,6 +130,8 @@
       border-top: 0;
       padding-top: 70px;
       padding-bottom: 70px;
+      padding: 80px 50px;
+
 
       @media screen and (max-width: 540px) {
         padding-top: 40px;
@@ -148,7 +150,8 @@
         margin-bottom: 25px;
 
         h3 {
-          font-size: 30px;
+          font-size: 27px;
+          font-weight: 200;
         }
 
         .icon {
@@ -159,7 +162,10 @@
       }
 
       p {
-        font-size: 20px;
+        font-weight: 100;
+        font-size: 16px;
+        line-height: 31px;
+        letter-spacing: .5px;
       }
     }
   }
@@ -170,6 +176,13 @@
   background: transparentize($black, 0.8);
   text-align: center;
 
+  .wwcd-title {
+    text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: 2px;
+    font-size: 30px;
+  }
+
   .row {
     margin: 0 25px;
 
@@ -178,11 +191,19 @@
       padding-bottom: 25px;
       border: 1px solid $main-darker;
       border-top: 0;
+      padding-left: 30px;
+      padding-right: 30px;
       border-bottom: 0;
 
       @media screen and (max-width: 540px) {
         padding-top: 40px;
         padding-bottom: 5px;
+      }
+
+      p {
+        font-size: 14px;
+        font-weight: 100;
+        letter-spacing: .7px;
       }
 
       &:nth-child(1), &:last-child {
@@ -197,9 +218,10 @@
   }
 
   .icon {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     max-width: 100%;
+    margin-bottom: 10px;
   }
 }
 
