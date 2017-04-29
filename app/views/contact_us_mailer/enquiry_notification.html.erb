@@ -1,0 +1,24 @@
+<div>
+  <h3>
+    Enquiry from <%= @name %>. Details are below:
+  </h3>
+
+  <p>
+    Email: <%= @email %>
+  </p>
+
+  <p>
+    Type of work: <%= @type_of_work %>
+  </p>
+
+  <p>
+    Budget: <%= @budget %>
+  </p>
+
+  <% if @short_intro.present? %>
+    <p>
+      Short Intro: <%= @short_intro %>
+    </p>
+  <% end %>
+
+</div>
