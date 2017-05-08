@@ -17,7 +17,12 @@ class PagesController < ApplicationController
     ContactUsMailer.thank_you(inquiry).deliver_now
     ContactUsMailer.enquiry_notification(inquiry).deliver_now
 
-    redirect_to root_path
+    redirect_to thank_you_path
+
+  end
+
+  def thank_you
+
   end
 
   private
