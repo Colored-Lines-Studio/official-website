@@ -1,7 +1,7 @@
 <nav class="header--navigation">
   <div class="header--logo">
     <%= link_to root_path, class: 'logo' do %>
-      <%= image_tag 'header-logo.png' %>
+      <%= image_tag 'nav-logo.png' %>
     <% end %>
   </div>
 
@@ -11,5 +11,6 @@
     </span>
     <%= link_to 'Hire Us', hire_us_path, class: 'btn btn-warning hire-us-btn' %>
     <%= home_button if current_page?('/hire_us') %>
+    <%= home_button if current_page?('/thank_you') %>
   </div>
 </nav>

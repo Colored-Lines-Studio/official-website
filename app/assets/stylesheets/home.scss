@@ -21,7 +21,7 @@
       }
 
       .logo img {
-        width: 50px;
+        width: 192px;
 
         @media screen and (max-width: 537px) {
           width: 60px;
@@ -74,10 +74,11 @@
 
     h1 {
       font-family: $mont;
-      font-weight: 800;
       font-size: 65px;
       margin-left: -25%;
-      margin-top: -50px;
+      margin-top: 40px;
+      font-weight: 400;
+      letter-spacing: .7px;
 
       @media screen and (max-width: 960px) {
         font-size: 40px;

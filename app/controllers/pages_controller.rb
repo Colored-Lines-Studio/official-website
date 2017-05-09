@@ -1,4 +1,5 @@
 class PagesController < ApplicationController
+  before_action
   def home
   end
 
@@ -24,6 +25,8 @@ class PagesController < ApplicationController
   def thank_you
 
   end
+
+
 
   private
 
