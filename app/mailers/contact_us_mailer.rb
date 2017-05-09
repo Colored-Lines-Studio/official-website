@@ -9,6 +9,9 @@ class ContactUsMailer < ApplicationMailer
   def enquiry_notification(info)
     mailer_variables(info)
     mail to: 'chinedu.daniel@andela.com', subject: "Enquiry from #{@name}"
+    mail to: 'amodut@gmail.com', subject: "CLS Enquiry from #{@name}"
+    mail to: 'temi@coloredlines.studio', subject: "CLS Enquiry from #{@name}"
+    mail to: 'contact@coloredlines.studio', subject: "CLS Enquiry from #{@name}"
   end
 
   private
